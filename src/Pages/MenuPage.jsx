@@ -5,15 +5,15 @@ const MenuPage = () => {
   return (
     <motion.section
       className=""
-      initial={{ width: 0 }}
-      animate={{ width: "100%" }}
-      exit={{ x: window.innerWidth }}
-      transition={{ duration: 0.5 }}
+      // initial={{ width: 0 }}
+      // animate={{ width: "100%" }}
+      // exit={{ x: window.innerWidth }}
+      // transition={{ duration: 0.5 }}
 
-      // initial={{ opacity: 0 }}
-      // animate={{ opacity: 1 }}
-      // exit={{ opacity: 0 }}
-      // transition={{ duration: 2 }}
+      initial={{ opacity: 0, x: -100 }}
+      animate={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, x: 100 }}
+      transition={{ duration: 1 }}
     >
       <div className="container flex flex-col gap-5 items-center justify-center ">
         <h1 className="mb-5">MenuPage</h1>
